@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skin Tone Selection</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            max-width: 600px;
+            margin-bottom: 20px;
+        }
+
+        .header-left {
+            display: flex;
+            align-items: center;
+        }
+
+        .arrow {
+            font-size: 1.5em;
+            margin-right: 10px;
+        }
+
+        .header-right {
+            display: flex;
+            gap: 15px;
+            font-size: 1.2em;
+        }
+
+        .description {
+            color: #333;
+            text-align: center;
+            margin-bottom: 30px;
+            width: 100%;
+            max-width: 500px;
+        }
+
+        .title {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #000;
+            margin-bottom: 20px;
+            text-align: center;
+            width: 100%;
+        }
+
+        .skin-tones-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 80px);
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .skin-color {
+            width: 80px;
+            height: 80px;
+            border-radius: 8px;
+            cursor: pointer;
+            box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Sample skin tone colors - adjust these to match the image */
+        .tone-1 { background-color: #f9e7d4; }
+        .tone-2 { background-color: #f7ead8; }
+        .tone-3 { background-color: #f2dccd; }
+        .tone-4 { background-color: #f5d7b8; }
+        .tone-5 { background-color: #eedbb3; }
+        .tone-6 { background-color: #eacba8; }
+        .tone-7 { background-color: #d4b398; }
+        .tone-8 { background-color: #c9a07e; }
+        .tone-9 { background-color: #b08165; }
+        .tone-10 { background-color: #91634b; }
+        .tone-11 { background-color: #70473a; }
+        .tone-12 { background-color: #4a2e27; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="header-left">
+            <span class="arrow">&larr;</span>
+            <span>Hello</span>
+        </div>
+        <div class="header-right">
+            <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3 5.5 5.5 0 0 0 11 5.5 5.5 5.5 0 0 0 5.5 3 5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7z"></path></svg></span>
+            <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.39l-1.06-.78a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg></span>
+            <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg></span>
+        </div>
+    </div>
+
+    <p class="description">AI clothing store helps you to create your outfit according to your style and what kind of color clothes you would suit according to your skin tone.</p>
+
+    <h2 class="title">CHOOSE YOUR SKIN TONE</h2>
+
+    <div class="skin-tones-grid">
+        <div class="skin-color tone-1"></div>
+        <div class="skin-color tone-2"></div>
+        <div class="skin-color tone-3"></div>
+        <div class="skin-color tone-4"></div>
+        <div class="skin-color tone-5"></div>
+        <div class="skin-color tone-6"></div>
+        <div class="skin-color tone-7"></div>
+        <div class="skin-color tone-8"></div>
+        <div class="skin-color tone-9"></div>
+        <div class="skin-color tone-10"></div>
+        <div class="skin-color tone-11"></div>
+        <div class="skin-color tone-12"></div>
+    </div>
+</body>
+</html>
